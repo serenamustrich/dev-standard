@@ -38,7 +38,7 @@
 ### 工作流10阶段
 
 ```mermaid
-graph TD
+flowchart LR
     A[📋 需求创建] --> B[👥 AI全员评审]
     B --> C[🎨 UI设计]
     C --> D[👥 UI评审]
@@ -75,7 +75,7 @@ graph TD
 ## 📋 分支策略
 
 ```mermaid
-graph TD
+flowchart LR
     A[用户需求] --> B[🤖 主Agent分解]
     B --> C[💻 SubAgent创建分支]
     C --> D[💻 开发测试]
@@ -84,17 +84,17 @@ graph TD
     F --> G{用户确认?}
     G -->|是| H[📦 合并到main]
     G -->|否| I[🔧 继续修改]
-    I --> D
+    I -.-> D
     H --> J[✅ 完成]
 ```
 
 ### 分支命名
 
 ```mermaid
-graph TD
-    A[分支类型] --> B[main - 生产环境]
-    A --> C[test - 测试环境]
-    A --> D[sub/xxx - SubAgent开发分支]
+flowchart LR
+    A[分支类型] --> B[main<br>生产环境]
+    A --> C[test<br>测试环境]
+    A --> D[sub/xxx<br>SubAgent开发分支]
     D --> E[示例: sub/dev/add-feature]
 ```
 
