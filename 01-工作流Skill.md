@@ -19,10 +19,10 @@
 
 ---
 
-## 二、工作流10阶段
+## 二，工作流10阶段
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[📋 需求创建] --> B[👥 AI全员评审]
     B --> C[🎨 UI设计]
     C --> D[👥 UI评审]
@@ -73,13 +73,13 @@ flowchart LR
 **不通过处理**：返回修改 → 重新评审
 
 ```mermaid
-flowchart LR
-    A[需求文档] --> B[📋 需求Agent]
-    A --> C[🎨 UI设计Agent]
-    A --> D[💻 开发Agent]
-    A --> E[🔍 质量Agent]
-    A --> F[🚀 部署Agent]
-    A --> G[🤖 主Agent]
+flowchart TD
+    A[需求文档] --> B[📋 需求Agent评审]
+    A --> C[🎨 UI设计Agent评审]
+    A --> D[💻 开发Agent评审]
+    A --> E[🔍 质量Agent评审]
+    A --> F[🚀 部署Agent评审]
+    A --> G[🤖 主Agent评审]
     B --> H{全员通过?}
     C --> H
     D --> H
@@ -107,7 +107,7 @@ flowchart LR
 ## 五、Git分支策略
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[用户需求] --> B[🤖 主Agent分解]
     B --> C[💻 SubAgent创建分支]
     C --> D[sub/dev/xxx]
@@ -149,7 +149,7 @@ flowchart LR
 ### 7.1 能力进化循环
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[AI工作] --> B{发现问题?}
     B -->|是| C[自动优化]
     B -->|否| D[完成任务]

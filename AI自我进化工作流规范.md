@@ -18,7 +18,7 @@
 ### 1.2 核心理念
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[AI工作] --> B{发现问题}
     B --> C[自我优化]
     C --> D[能力提升]
@@ -58,7 +58,7 @@ flowchart LR
 ### 3.1 能力进化循环
 
 ```mermaid
-flowchart LR
+flowchart TD
     subgraph 工作循环
     A[接收需求] --> B[执行工作]
     B --> C[记录过程]
@@ -96,7 +96,7 @@ AI在执行任务时自动检测：
 ### 3.3 自我优化流程
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[发现问题] --> B{问题类型?}
     B -->|系统缺陷| C[创建优化需求]
     B -->|流程缺陷| D[优化规范流程]
@@ -132,7 +132,7 @@ flowchart LR
 ### 4.2 知识自动沉淀
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[工作执行] --> B[记录关键节点]
     B --> C[提炼经验]
     C --> D{价值评估}
@@ -148,7 +148,7 @@ flowchart LR
 ### 4.3 经验复用机制
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[新需求] --> B[检索知识库]
     B --> C{相似经验?}
     C -->|有| D[获取最佳实践]
@@ -180,7 +180,7 @@ flowchart LR
 ### 5.2 能力提升路径
 
 ```mermaid
-flowchart LR
+flowchart TD
     subgraph 能力提升
     A[基础能力] --> B[完成任务]
     B --> C[发现问题]
@@ -223,7 +223,7 @@ flowchart LR
 ### 6.2 自我优化规则
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[发现问题] --> B{影响范围?}
     B -->|单次| C[记录到经验库]
     B -->|多次| D[分析根本原因]
@@ -255,7 +255,7 @@ flowchart LR
 ### 7.1 增强后的工作流
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[接收需求] --> B[检查知识库]
     B --> C[检索相关经验]
     C --> D[制定计划]
@@ -292,7 +292,7 @@ while (true) {
 ### 7.3 多Agent协作进化
 
 ```mermaid
-flowchart LR
+flowchart TD
     subgraph Agent进化
     A[需求Agent] --> D[能力评估]
     B[开发Agent] --> D
@@ -366,7 +366,7 @@ flowchart LR
 ### 9.2 关键指标
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[知识库] -->|持续增长| B[知识数量]
     A -->|持续优化| C[知识质量]
     C -->|持续提升| D[AI能力]

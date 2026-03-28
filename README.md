@@ -31,7 +31,7 @@
 ### 工作流10阶段
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[📋 需求创建] --> B[👥 AI全员评审]
     B --> C[🎨 UI设计] --> D[👥 UI评审]
     D --> E[💻 开发设计] --> F[👥 开发评审]
@@ -78,7 +78,7 @@ sub/*   → SubAgent开发分支
 ## 🔄 自我进化
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[AI工作] --> B{发现问题?}
     B -->|是| C[自动优化]
     B -->|否| D[完成任务]
