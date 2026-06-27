@@ -1,0 +1,7 @@
+interface:
+  display_name: "Company Dev Standards"
+  short_description: "Check ACMP code and schema standards"
+  default_prompt: "Use $company-dev-standards to review this change for backend, frontend, database, and documentation consistency."
+
+policy:
+  allow_implicit_invocation: true
